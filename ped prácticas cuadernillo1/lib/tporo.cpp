@@ -33,7 +33,7 @@ bool TPoro::operator==(TPoro &tporo2)
     }
 }
 
-ostream& operator<<(ostream& os,const TPoro& poro){
+/* ostream& operator<<(ostream& os,const TPoro& poro){
     if(!poro.EsVacio()){ 
         os.setf(ios::fixed); 
         os.precision( 2 ); 
@@ -46,6 +46,13 @@ ostream& operator<<(ostream& os,const TPoro& poro){
         else 
         os << "()"; 
         return os; 
+}
+ */
+int TPoro::getx(){
+    return this->x;
+}
+void TPoro::setx(int sth){
+    this->x= sth;
 }
 
 

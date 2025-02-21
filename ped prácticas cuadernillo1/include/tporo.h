@@ -39,4 +39,8 @@ class TPoro
 
     // Sobrecarga del operador SALIDA
     friend ostream& operator<<(ostream &, const TPoro &);
+
+    int getx();
+
+    void setx(int);
 };
